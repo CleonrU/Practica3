@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Usa DATABASE_URL de Render para PostgreSQL
-DATABASE_URL = os.getenv("DATABASE_URL", "postgres://user:password@localhost:5432/practica3")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://practica3_l0ch_user:ZlQA1GTgMRqJXUxokI6pokwNQUqBz2Eu@dpg-d2qbtch5pdvs73dq7gcg-a/practica3_l0ch")
 
 # Si la URL es de PostgreSQL, crea la conexión sin parámetros adicionales
 if DATABASE_URL.startswith("postgres"):
